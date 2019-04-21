@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block stylesheet %}
+    <link href="{% static 'css/account.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center logo my-4">
+            <a href="{% url 'home' %}">Django boards</a>
+        </h1>
+        {% block content %}
+        {% endblock %}
+        </h1>
+    </div>
+{% endblock %}

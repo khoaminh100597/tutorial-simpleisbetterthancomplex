@@ -10,7 +10,7 @@
     <li class="breadcrumb-item active">New topic</li>
 {% endblock %}
 {% block content %}
-    <form method="post" novalidate>
+    <form method="post">
       {% csrf_token %}
         {% include 'includes/form.html' %}
         <button type="submit" class="btn btn-success">Submit</button>
